@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/test/test",
+    "pages/home/home",
+    "pages/publish/publish",
+    "pages/login/login",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/myorder/myorder",
+    "pages/register/register",
+    "pages/orderdetail/orderdetail",
+    "pages/newmsg/newmsg",
+    "pages/newmsgdetail/newmsgdetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Take",
+    "navigationBarTextStyle": "black"
+  }
+ 
+}

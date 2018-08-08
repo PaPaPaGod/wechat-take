@@ -1,0 +1,18 @@
+<!--pages/home/home.wxml-->
+<view class='container'>
+  <view class="section section_ctn" style="position:center">
+    <image class="logo" src="../../image/launcher_icon.png" style="width:130px;height:150px;margin:auto;position:center;"></image>
+  </view>
+
+  <button class='home-btn-yellow' bindtap='navigateToPublish'>
+    开始发布
+  </button>
+  <button class='home-btn-white' bindtap='navigateToMyOrder'>
+    我的订单
+  </button>
+
+
+  <!-- <button class='home-btn-white' bindtap='navigateToLogin'>
+    login
+  </button>  -->
+</view>

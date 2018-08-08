@@ -1,0 +1,87 @@
+/* pages/publish/publish.wxss */
+
+.input-style {
+  border: medium none !important;
+	margin: 5px 5px 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+.input-border{
+  height: 50px;
+  font-size: 15px;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:8px 5px 5px;
+	padding:10px;
+  width: 88%;
+}
+
+.section{
+  margin:5px 5px 10px
+}
+
+.section_title{
+  color:#939292;
+}
+
+.picker{
+  margin:5px 5px 10px;
+  border: 1px solid yellow;
+  border-radius: 15px;
+  background:yellow
+}
+
+.btn-submit{
+  margin:8px;
+  color:#222;
+  background:#fed52f
+}
+
+
+.money-style{
+  display: flex;
+  flex-direction: column;
+  border: medium none !important;
+	margin: 5px 5px 10px;
+	min-width: 100%;
+	padding: 0;
+}
+
+.input-money{
+  font-size: 15px;
+  width: 30%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:8px 5px 5px;
+	padding:10px;
+  background: '../../image/money.png' left center no-repeat
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 24px;
+  width: 400px;
+}
+
+.money-title {
+  margin-top:-20px;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 80px;
+  height: 100px;
+  text-align: left;
+}
+
+.tips{
+  margin-top:-5px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  width: 250px;
+  height: 50px;
+  font-size: 10px;
+  color: gray;
+}

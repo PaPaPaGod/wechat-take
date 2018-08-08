@@ -1,0 +1,42 @@
+<include src="../../utils/refreshHeaderView.wxml" />
+<include src="../../utils/loadMoreFooterView.wxml" />
+<view class='container' hidden='{{orders.length!=0?true:false}}'>没有任何记录!</view>
+<scroll-view class="scroll_container" scroll-y="true" style="position:fixed;width:100%;left:0;height:{{windowHeight}}px;top:{{loadMoreHeight == 0? refreshHeight:-loadMoreHeight}}px;bottom:{{loadMoreHeight}}px;" bindscroll="scroll" bindscrolltolower="lower"
+  bindscrolltoupper="upper" bindtouchstart="start" bindtouchend="end">
+  <view bindtouchmove="move">
+    <block wx:for="{{orders}}">
+      <view class="item-style" bindtap='navigateToDetail' data-index="{{index}}">
+        <view class='flex-container'>
+          <text class='company'>
+              {{item.company}}
+            </text>
+          <text class='state'>
+              {{item.status==0?'未完成':(item.status==2?'已接单':'已关闭')}}
+            </text>
+        </view>
+
+        <view class='line'></view>
+
+        <view class='flex-container'>
+          <text class='title'>
+              快递描述
+            </text>
+          <text class='content'>
+              {{item.des}}
+            </text>
+        </view>
+
+        <view class='flex-container'>
+          <text class='title'>
+              发布时间
+            </text>
+          <text class='content'>
+              {{item.created}}
+            </text>
+        </view>
+      </view>
+
+    </block>
+
+  </view>
+</scroll-view>

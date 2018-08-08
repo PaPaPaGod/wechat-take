@@ -1,0 +1,16 @@
+/* pages/home/home.wxss */
+
+.home-btn-yellow{
+  color:black;
+  margin:28px 8px 8px 8px;
+  width: 80%;
+  background:yellow
+}
+
+.home-btn-white{
+  color:black;
+  margin:8px 8px 8px 8px;
+  width: 80%;
+  background:whitesmoke
+}
+ 

@@ -1,0 +1,26 @@
+<include src="../../utils/refreshHeaderView.wxml" />
+<include src="../../utils/loadMoreFooterView.wxml" />
+<view class='container' hidden='{{orders.length!=0?true:false}}'>没有任何记录!</view>
+<scroll-view class="scroll_container" scroll-y="true" style="position:fixed;width:100%;left:0;height:{{windowHeight}}px;top:{{loadMoreHeight == 0? refreshHeight:-loadMoreHeight}}px;bottom:{{loadMoreHeight}}px;" bindscroll="scroll" bindscrolltolower="lower"
+  bindscrolltoupper="upper" bindtouchstart="start" bindtouchend="end">
+    <block wx:for="{{orders}}">
+      <view class="item-style" bindtap='navigateToDetail' data-index="{{index}}">
+        <view class='card'>
+          <view class='ic-header'>
+            <image class='header' src='../../image/ic_male.png'></image>
+            <text>{{item.name}}</text>
+            <image class='school-status' src="{{item.at_school==0?'../../image/ic_atschool.png':'../../image/ic_notatschool.png'}}"></image>
+          </view>
+          <view class='order-detail'>
+            <text>物流公司：{{item.company}}</text>
+            <text>快递描述：{{item.des}}</text>
+            <text>取件地址：{{item.company}}</text>
+          </view>
+          <view class='ic-status'>
+            <image class='order-reward' src='../../image/ic_reward.png'></image>
+            <image class='order-finish' src='../../image/order_finish_icon.png' style="display:{{item.status==1?'none':'visible'}}"></image>
+          </view>
+        </view>
+      </view>
+    </block>
+</scroll-view>

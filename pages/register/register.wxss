@@ -1,0 +1,88 @@
+/* pages/register/register.wxss */
+
+.image{
+    width: 580rpx;
+    height: 208rpx;
+}
+
+.logo{
+    width: 192rpx;
+    height:152rpx;
+    text-align: center;
+    align-items: center;
+}
+ 
+.flex-wrp-normal{
+		border: 1px solid #FFF841;
+		outline: none;
+		padding: 12px 20px;
+		color: #afafaf;
+		line-height: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+.flex-wrp-wrong{
+		border: 1px solid red;
+		outline: none;
+		padding: 12px 20px;
+		color: #afafaf;
+		line-height: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+.flex-item{
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+
+.flex-item-label{
+  width: 105px;
+  height: 44px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-item-button{
+  width: 100px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weui_cells_title {
+    margin-top: .77em;
+    margin-bottom: .9em;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #888;
+}
+
+.register-button{
+  margin:15px 5px 0px 5px;
+  color: #222;
+  background: #fed52f
+}
+
+.UI-toast {
+  position: fixed;top: 35%;left: 20%;transform: translateZ(0) translateY(-100%);background: rgba(0, 0, 0, 0.7);color: #fff;font-size: 14px;width: 60%;line-height: 1.5em;margin: 0 auto;box-sizing: border-box;
+  padding: 10px;text-align: center;border-radius: 4px;z-index: 100;
+}
+.backgroundViewStyle{
+  margin-top:30rpx;background:white;height:500rpx;flex-direction:column;border-top:1rpx solid #e5e5e5;
+}
+.demoButtonStyle{
+  background-color:#3CB371;width:60%;height:100rpx;color:#fff;
+}
+

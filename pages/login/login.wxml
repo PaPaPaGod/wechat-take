@@ -1,0 +1,45 @@
+<!--pages/login/login.wxml-->
+<import src="../../module/messageView.wxml" />
+
+<view class="page">
+    <view>
+      <template is="UI-toast" data="{{ toastShow:toastShow, title: title}}">
+    </template>
+
+    </view>
+       <view class="page_hd ">
+          <view class="section section_ctn" style="position:center">
+                  <image class="logo" src="../../image/launcher_icon.png" style="width:127.33333333px;height:101px;margin:auto;position:center; margin-left:6.5rem"></image>
+          </view>
+      </view>  
+    <view class="page_body" > 
+        <form class="" catchsubmit="formSubmit" catchreset="formReset">
+            <view class="weui_cells_title">
+                <label>
+                    <text>登录</text>
+                </label>
+            </view>
+
+             <view class="{{phoneIsRight==true?'flex-wrp-normal':'flex-wrp-wrong'}}" style="flex-direction:row">
+                <view class="flex-item">
+                <view style='width:10%;display:inline-block;height:100%;'><image src='../../image/ic_error_outline.png' style='display:inline;' mode="aspectFit"></image></view>
+                    <input name="phone" placeholder="手机号" value="{{phone}}" bindinput="phoneDataChange"/>
+                </view>
+            </view>
+
+             <view class="{{pwdIsRight==true?'flex-wrp-normal':'flex-wrp-wrong'}}" style="flex-direction:row">
+                <view class="flex-item">
+                    <input name="password" type='password' placeholder="密码" value="{{password}}" bindinput="passwordDataChange"/>
+                </view>
+            </view> 
+
+        <view class="btn-area">
+            <button formType="submit" class="login-button">登录</button>
+        </view>
+        </form>
+      <view class='container'>
+        <text class='register-text' bindtap='navigateToRegister'>没有账号？点我注册</text>
+      </view>
+    </view>
+
+</view>

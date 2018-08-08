@@ -1,0 +1,48 @@
+<!--pages/orderdetail/orderdetail.wxml-->
+<view class='item-style'>
+  <view>
+    <view class='title'>快递公司</view>
+    <text class='content'>{{company}}</text>
+  </view>
+
+  <view>
+    <view class='title'>快递描述</view>
+    <text class='content'>{{des}}</text>
+  </view>
+
+  <view>
+    <view class='title'>创建时间</view>
+    <text class='content'>{{created}}</text>
+  </view>
+
+  <view>
+    <view class='title'>送达地点</view>
+    <text class='content' bindtap='call'>{{place}}</text>
+  </view>
+
+  <view>
+    <view class='title'>支付金额</view>
+    <text class='content'>￥ {{money}}</text>
+  </view>
+
+  <view>
+  
+    <view class='title'>订单情况</view>
+    <text class='content'>{{state==0?'未完成':(state==2?'已接单':'已关闭')}}</text>
+  </view>
+
+  <view hidden='{{state==2?false:true}}'>
+    <view>
+      <view class='title'>代拿者姓名</view>
+      <text class='content'>{{takerName}}</text>
+    </view>
+    <view>
+      <view class='title'>代拿者手机号码</view>
+      <text class='phone' bindtap='call'>{{takerPhone}}</text>
+    </view>
+  </view>
+
+</view>
+
+
+

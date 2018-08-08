@@ -1,0 +1,52 @@
+<!--pages/publish/publish.wxml-->
+<scroll-view>
+  <form bindsubmit="formSubmit" report-submit='true'>
+    <!-- company -->
+    <view class="section">
+      <view class="section_title">选择公司</view>
+      <picker name="company" class='picker' bindchange="bindCompanyChange" value="{{companyIndex}}" range="{{companyArray}}">
+        <view class="picker">
+          {{companyIndex==-1?"请选择快递公司":companyArray[companyIndex]}}
+        </view>
+      </picker>
+    </view>
+
+    <!-- delivery description -->
+    <view class='input-style'>
+      <view class="section_title">快递描述</view>
+      <textarea class="input-border" bindinput='desInput' name="des" placeholder='请概要说明快递的性质' bindconfirm='desInput'></textarea>
+    </view>
+
+    <!-- delivery's company address -->
+    <view class='input-style'>
+      <view class="section_title">快递公司所在位置</view>
+      <textarea name="addr" class="input-border" bindinput='addrInput' placeholder='请说明快递公司所在位置' bindconfirm='addrInput'></textarea>
+    </view>
+
+    <!-- delivery's transtition -->
+    <view class='input-style'>
+      <view class="section_title">送达地点</view>
+      <textarea name="tran" selectable="true" auto-height:true class="input-border" placeholder='你想要taker送到哪里' bindinput='traInput' bindconfirm='traInput'></textarea>
+    </view>
+
+    <!-- delivery's price -->
+    <view class='money-style'>
+    <view class='flex-container'>
+      <view class="section_title">金额</view>
+        <text class='tips'>
+              1kg：2块; 2-4kg：5块; 4kg以上：自己看着给~
+            </text>
+      </view>
+      <input name="money" type='number' class="input-money" placeholder="¥" dir="rtl" bindinput='moneyInput'></input>
+    </view>
+
+    <!-- delivery's sms -->
+    <view class='input-style'>
+      <view class="section_title">快递的短信</view>
+      <textarea name="sms" selectable="true" class="input-border" placeholder='将快递短信内容复制并粘贴在此，方便Taker更快地找到快递。' bindinput='smsInput' bindconfirm='smsInput'></textarea>
+    </view>
+
+    <button form-type='submit' class='btn-submit'>提交</button>
+  </form>
+
+</scroll-view>
