@@ -31,11 +31,12 @@
 .item-style {
   display: flex;
   position: relative;
-  width: 330px;
+  width: 90%;
   height: auto;
   background: #fff;
   margin: auto auto 20px 13px;
   border: 2px solid #EFEA5E;
+  border-radius: 5px;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.27);
 }
 
@@ -46,15 +47,6 @@
   height: 50px;
   width: 400px;
   
-}
-
-.company {
-  margin-top:-20px;
-  box-sizing: border-box;
-  padding: 10px;
-  width: 230px;
-  height: 100px;
-  text-align: left;
 }
 
 .state{
@@ -116,13 +108,6 @@
   color:gray;
 }
 
-.portrait{
-  margin: 50rpx;
-  height: 150rpx;
-  width: 150rpx;
-  border-radius: 15rpx;
-}
-
 .status{
   margin: 50rpx;
   height: 150rpx;
@@ -130,7 +115,72 @@
   border-radius: 15rpx;
 }
 
+
+
+.card{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%
+}
+
 .order-detail{
-  margin-top: 70rpx;
+  width: 50%;
+  display: flex;
+  justify-content: center;
   font-size: 28rpx;
+  flex-direction: column
+}
+
+.order-detail text{
+    display: block;
+    font-size:28rpx;
+    color:#000000;
+    line-height: 40rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.ic-status{
+  margin-top: 10rpx; 
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ic-header{
+  width: 25%;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20rpx;
+}
+
+.header{
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.school-status{
+  width:45rpx;
+  height: 30rpx;
+}
+
+.ic-header text{
+  font-size: 28rpx;
+}
+.order-reward{
+  width: 70rpx;
+  height: 40rpx;
+}
+
+.order-finish{
+  margin-top: 12rpx;
+  width: 120rpx;
+  height: 120rpx;
 }
